@@ -241,6 +241,15 @@ a:hover{
     color: rgb(109, 109, 109);
 }
 
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .card-wrapper::before{
     content: "";
     position: absolute;
@@ -279,3 +288,13 @@ a:hover{
     width: 350px;
     height: 205px;
 }
+
+.card:hover > .card-wrapper p {
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
